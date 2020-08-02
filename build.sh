@@ -7,7 +7,7 @@ docker-compose up -d
 wait
 echo "Executing Tests" &
 wait
-docker run  --network="host" day2demoim mvn -f /home/DockerTestFramework/pom.xml clean test
+docker run  --network="host" qekafe/workshops:day2demoim mvn -f /home/DockerTestFramework/pom.xml clean test
 wait
 
 echo "Tests Executed" &
