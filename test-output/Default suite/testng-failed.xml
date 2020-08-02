@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <parameter name="browser" value="param-val-not-found"/>
+  <parameter name="browser" value="chrome"/>
   <test name="Default test(failed)">
     <classes>
-      <class name="SeleniumGrid.SeleniumGrid.SeleniumGridTests">
+      <class name="docker.DockerTests">
         <methods>
-          <include name="test1"/>
+          <include name="dockertest3"/>
+          <include name="dockertest2"/>
           <include name="beforeTest"/>
-          <include name="test2"/>
+          <include name="afterTest"/>
+          <include name="dockertest1"/>
         </methods>
-      </class> <!-- SeleniumGrid.SeleniumGrid.SeleniumGridTests -->
+      </class> <!-- docker.DockerTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <parameter name="browser" value="chrome"/>
-  <test name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test1(failed)">
+    <parameter name="browser" value="chrome"/>
     <classes>
       <class name="docker.DockerTests">
         <methods>
@@ -14,5 +14,5 @@
         </methods>
       </class> <!-- docker.DockerTests -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->

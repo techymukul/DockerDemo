@@ -9,18 +9,22 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class DockerTests {
 	
 	WebDriver driver;
-	String appUrl = "https://www.google.com";
+	String app1Url = "https://www.flipkart.com";
+	String app2Url = "https://www.facebook.com";
+	String app3Url = "https://www.amazon.in";
 	
 	@Parameters({ "browser" })
-	@BeforeMethod
-	public void beforeMethod(String browser) throws MalformedURLException
+	@BeforeTest
+	public void beforeTest(String browser) throws MalformedURLException
 	{
 		System.out.println("Browser Name is:"+browser);
 		
@@ -36,7 +40,6 @@ public class DockerTests {
 			try {
 				driver = new RemoteWebDriver (new URL("http://0.0.0.0:4444/wd/hub"), options);
 			} catch (Exception e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 			
@@ -51,12 +54,12 @@ public class DockerTests {
 			driver = new RemoteWebDriver (new URL("http://localhost:4444/wd/hub"), options);
 		}
 		
-		driver.get(appUrl);
+		
 	
 	}
 	
-	@AfterMethod
-	public void afterMethod()
+	@AfterTest
+	public void afterTest()
 	{
 		driver.close();
 	}
@@ -64,24 +67,22 @@ public class DockerTests {
 	
 	@Test
 	public void dockertest1() {
-	System.out.println("Inside First Test");
-	System.out.printf("Thread Id : %s%n", Thread.currentThread().getId());
-
+	System.out.println("Inside First Test, testing flipkart");
+	driver.get(app1Url);
 
 	}
 	
 	@Test
 	public void dockertest2() {
-		System.out.println("Inside second Test");
-		System.out.printf("Thread Id : %s%n", Thread.currentThread().getId());
-
+		System.out.println("Inside second Test, testing facebook");
+		driver.get(app2Url);
 
 		}
 	
 	@Test
 	public void dockertest3() {
-		System.out.println("Inside third Test");
-		System.out.printf("Thread Id : %s%n", Thread.currentThread().getId());
+		System.out.println("Inside third Test, testing amazon");
+		driver.get(app3Url);
 
        }
 	

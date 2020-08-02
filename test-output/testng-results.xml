@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="33504" started-at="2020-05-03T07:11:14Z" finished-at="2020-05-03T07:11:47Z">
+  <suite name="Suite" duration-ms="16412" started-at="2020-08-02T04:29:57Z" finished-at="2020-08-02T04:30:14Z">
     <groups>
     </groups>
-    <test name="Test1" duration-ms="33504" started-at="2020-05-03T07:11:14Z" finished-at="2020-05-03T07:11:47Z">
+    <test name="Test1" duration-ms="16412" started-at="2020-08-02T04:29:57Z" finished-at="2020-08-02T04:30:14Z">
       <class name="docker.DockerTests">
-        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:docker.DockerTests@5c3bd550]" name="beforeMethod" is-config="true" duration-ms="11108" started-at="2020-05-03T12:41:14Z" finished-at="2020-05-03T12:41:25Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:docker.DockerTests@5c3bd550]" name="beforeTest" is-config="true" duration-ms="6759" started-at="2020-08-02T09:59:57Z" finished-at="2020-08-02T10:00:04Z">
           <params>
             <param index="0">
               <value>
@@ -17,53 +17,23 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="test1()[pri:0, instance:docker.DockerTests@5c3bd550]" name="test1" duration-ms="44" started-at="2020-05-03T12:41:25Z" finished-at="2020-05-03T12:41:25Z">
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="dockertest1()[pri:0, instance:docker.DockerTests@5c3bd550]" name="dockertest1" duration-ms="3148" started-at="2020-08-02T10:00:04Z" finished-at="2020-08-02T10:00:07Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:docker.DockerTests@5c3bd550]" name="afterMethod" is-config="true" duration-ms="501" started-at="2020-05-03T12:41:25Z" finished-at="2020-05-03T12:41:26Z">
+        </test-method> <!-- dockertest1 -->
+        <test-method status="PASS" signature="dockertest2()[pri:0, instance:docker.DockerTests@5c3bd550]" name="dockertest2" duration-ms="2114" started-at="2020-08-02T10:00:07Z" finished-at="2020-08-02T10:00:09Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:docker.DockerTests@5c3bd550]" name="beforeMethod" is-config="true" duration-ms="9057" started-at="2020-05-03T12:41:26Z" finished-at="2020-05-03T12:41:35Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- dockertest2 -->
+        <test-method status="PASS" signature="dockertest3()[pri:0, instance:docker.DockerTests@5c3bd550]" name="dockertest3" duration-ms="3847" started-at="2020-08-02T10:00:09Z" finished-at="2020-08-02T10:00:13Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="test3()[pri:0, instance:docker.DockerTests@5c3bd550]" name="test3" duration-ms="3" started-at="2020-05-03T12:41:35Z" finished-at="2020-05-03T12:41:35Z">
+        </test-method> <!-- dockertest3 -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:docker.DockerTests@5c3bd550]" name="afterTest" is-config="true" duration-ms="473" started-at="2020-08-02T10:00:13Z" finished-at="2020-08-02T10:00:14Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test3 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:docker.DockerTests@5c3bd550]" name="afterMethod" is-config="true" duration-ms="1335" started-at="2020-05-03T12:41:35Z" finished-at="2020-05-03T12:41:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:docker.DockerTests@5c3bd550]" name="beforeMethod" is-config="true" duration-ms="10156" started-at="2020-05-03T12:41:36Z" finished-at="2020-05-03T12:41:46Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="test4()[pri:0, instance:docker.DockerTests@5c3bd550]" name="test4" duration-ms="11" started-at="2020-05-03T12:41:46Z" finished-at="2020-05-03T12:41:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test4 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:docker.DockerTests@5c3bd550]" name="afterMethod" is-config="true" duration-ms="1223" started-at="2020-05-03T12:41:46Z" finished-at="2020-05-03T12:41:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
+        </test-method> <!-- afterTest -->
       </class> <!-- docker.DockerTests -->
     </test> <!-- Test1 -->
   </suite> <!-- Suite -->
