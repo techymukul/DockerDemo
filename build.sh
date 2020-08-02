@@ -2,7 +2,7 @@
 
 echo "Setting up Docker" &
 wait
-docker-compose start
+docker-compose up
 
 wait
 echo "Executing Tests" &
